@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <h1 id="header">To Do List</h1>
+
+    <form id="addTasks">
+        <input type="text" placeholder="Task to be done.." id="addTask"></input>
+
+        <!-- <input type="submit" value="Add"></input> text added inbetween input tag will not be considered-->
+        
+        <button type="submit" id="addButton">Add</button>
+        
+        <select>
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+        </select>  
+    </form>
+
+    <br>
+    <br>
+
+    <div id="taskLists" class="taskLists">
+        <div id="pendingList" class="listColumn">
+            <h3 id="listTitle1" class="listTitle">Pending Tasks</h3>
+            <ul id="pendingListValues">
+                <li>Learn React JS</li>
+                <li>Learn Node JS</li>
+                <li>Learn MongoDB</li>
+                <li>Learn Express JS</li>
+            </ul>
+        </div>
+
+        <div id="inprogressList" class="listColumn">
+            <h3 id="listTitle2" class="listTitle">In Progress Tasks</h3>
+            <ul id="inprogressListValues">
+                <li>Learn JS</li>
+            </ul>
+        </div>
+
+        <div id="completedList" class="listColumn">
+            <h3 id="listTitle3" class="listTitle">Completed Tasks</h3>
+            <ul id="completedListValues"></ul>
+        </div>    
+    </div>
+
+    
+
+</body>
+
+</html>
